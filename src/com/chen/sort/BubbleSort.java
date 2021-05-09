@@ -1,5 +1,7 @@
 package com.chen.sort;
 
+import static com.chen.util.swap.swap;
+
 public class BubbleSort {
 
 
@@ -68,19 +70,5 @@ public class BubbleSort {
         }
         return array;
     }
-
-
-    /**
-     * swap the value of x,y(x != y)
-     *
-     * @param x
-     * @param y
-     */
-    public void swap(int[] array, int x, int y) {
-        array[x] = array[x] ^ array[y];
-        array[y] = array[x] ^ array[y];
-        array[x] = array[x] ^ array[y];
-    }
-
 
 }
